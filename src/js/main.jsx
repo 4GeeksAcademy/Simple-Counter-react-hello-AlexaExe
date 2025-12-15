@@ -11,8 +11,24 @@ import '../styles/index.css'
 // components
 import Home from './components/Home';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Home/>
+
+const reactRender = ReactDOM.createRoot(document.getElementById('root'))
+  
+let count = 0;
+
+setInterval(() => {
+    reactRender.render(
+    <React.StrictMode>
+ <Home count= {count}/>
+ <div className="counter d-flex">
+  
+ </div>
+
   </React.StrictMode>,
-)
+    )
+    count++
+  }, 1000);
+  
+   
+
+

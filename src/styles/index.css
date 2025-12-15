@@ -9,3 +9,19 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+#fondo{
+    background-image: url("https://cataas.com/cat/gif/says/Hello?filter=mono&fontColor=orange&fontSize=20&type=square");
+    justify-content: center;
+}
+
+#fonType{
+    font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.neon-panel{
+    border:2px solid #ffd000;
+    box-shadow: 0 0 10px #ffae00;
+}
+

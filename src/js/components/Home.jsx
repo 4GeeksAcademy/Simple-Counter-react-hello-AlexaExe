@@ -1,26 +1,21 @@
 import React from "react";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import  {Panel} from "./Panel";
 
 //create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-            
+const Home = ({count}) => {
 
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+	return (
+		
+		<div id="fondo" className="row d-flex">
+			<Panel className="fondoCuadro" contador = {Math.floor(count/10000)%10}/>
+			<Panel contador = {Math.floor(count/1000)%10}/>
+			<Panel contador = {Math.floor(count/100)%10}/>
+			<Panel contador = {Math.floor(count/10)%10}/>
+			<Panel contador = {Math.floor(count/1)%10}/>
+			
+          
 		</div>
 	);
 };
